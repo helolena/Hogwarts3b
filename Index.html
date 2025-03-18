@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts - Magia e Mistério</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="misterioso">Hogwarts: Entre o Real e o Imaginário</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#casas">As Casas</a></li>
+                <li><a href="#disciplinas">Disciplinas</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>O Chamado da Magia</h2>
+            <p>Você já sentiu que existe algo além do que os olhos podem ver? Em Hogwarts, o impossível se torna realidade. Feitiços, criaturas místicas e segredos ancestrais aguardam aqueles que ousam cruzar seus portões...</p>
+            <img src="images/mapa.jpg" alt="Mapa de Hogwarts" class="fade-in">
+        </section>
+
+        <section id="casas">
+            <h2>As Quatro Casas</h2>
+            <p>Hogwarts é dividida em quatro casas, cada uma representando qualidades distintas:</p>
+            <ul>
+                <li><strong>Grifinória</strong>: coragem e bravura.</li>
+                <li><strong>Sonserina</strong>: ambição e astúcia.</li>
+                <li><strong>Corvinal</strong>: sabedoria e intelecto.</li>
+                <li><strong>Lufa-Lufa</strong>: lealdade e dedicação.</li>
+            </ul>
+            <img src="images/casas.jpg" alt="Brasões das casas de Hogwarts">
+        </section>
+
+        <section id="disciplinas">
+            <h2>Disciplinas Mágicas</h2>
+            <p>Os alunos de Hogwarts estudam disciplinas essenciais para se tornarem bruxos habilidosos:</p>
+            <ul>
+                <li>Poções</li>
+                <li>Feitiços</li>
+                <li>Defesa Contra as Artes das Trevas</li>
+                <li>Transfiguração</li>
+                <li>História da Magia</li>
+                <li>Astronomia</li>
+                <li>Trato das Criaturas Mágicas</li>
+            </ul>
+            <img src="images/disciplinas.jpg" alt="Alunos praticando feitiços">
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Hogwarts</h2>
+            <div class="gallery">
+                <img src="images/hogwarts1.jpg" alt="Vista aérea de Hogwarts">
+                <img src="images/hogwarts2.jpg" alt="Salão principal de Hogwarts">
+                <img src="images/hogwarts3.jpg" alt="Entrada da escola de Hogwarts">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Envie sua mensagem e logo uma coruja responderá!</p>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hogwarts - Mistérios Além do Véu</p>
+    </footer>
+</body>
+</html>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d1a;
+    color: #d0d0ff;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to right, #000000, #3a0066);
+    padding: 20px;
+}
+
+.misterioso {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: #a29bfe;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #b3b3ff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #a29bfe;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border: 3px solid #a29bfe;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #a29bfe;
+}
+
+button {
+    background-color: #3a0066;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b0082;
+}
+
+/* Animação */
+.fade-in {
+    animation: fade 2s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Mensagem enviada com sucesso! Sua coruja logo chegará ao destino.");
+        form.reset();
+    });
+});
+# Hogwarts - Magia e Mistério
+
+Este é um site acessível e visualmente misterioso sobre Hogwarts.  
+Ele inclui informações sobre a escola, suas casas, disciplinas e galeria de imagens.
+
+# Design Misterioso
+- Paleta de cores: preto, azul e roxo.
+- Fonte Script para um ar enigmático.
+- Efeitos de animação sutis.
+
+# Recursos de Acessibilidade
+- HTML semântico.
+- Alto contraste de cores.
+- Navegação facilitada por teclado.
+
+# Como Executar
+1. Baixe os arquivos do repositório.
+2. Abra `index.html` em um navegador.
+3. Explore o mundo mágico de Hogwarts!
+
+ "A magia está em todos os lugares, basta saber onde olhar." 
